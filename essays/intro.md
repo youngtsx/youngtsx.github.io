@@ -7,4 +7,4 @@ labels:
   - Learning
 ---
 
-A friend’s mom who works in IT at UH recommended this to me.
+A friend’s mom who works in IT at UH recommended this major to me.
