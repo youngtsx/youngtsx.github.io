@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Tiffany Young",
     "label": "Student",
-    "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "picture": "https://youngtsx.github.io/images/molly.png",
+    "email": "tyoung24@hawaii.edu",
+    "phone": "",
+    "website": "https://youngtsx.github.io",
+    "summary": "I am studying for a B.B.A. in Management Information Systems at the University of Hawaii. I expect to graduate in Spring, 2024.",
     "location": {
       "address": "",
       "postalCode": "96822",
@@ -17,41 +17,29 @@
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "youngtsx",
+        "url": "http://github.com/youngtsx"
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
+        "username": "tiffanytyoung",
+        "url": "http://linkedin.com/in/tiffanytyoung"
       },
-      {
-        "network": "twitter",
-        "username": "mollymal",
-        "url": "http://twitter.com/changeme"
-      },
-      {
-        "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/changeme"
-      }
     ]
   },
   "interests": [
     {
-      "name": "internet of things",
-      "keywords": [
-        "Arduino",
-        "TI MSP430"
-      ]
-    },
-    {
-      "name": "data mining",
+      "name": "piano",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "tennis",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "watching anime",
       "keywords": [
       ]
     }
