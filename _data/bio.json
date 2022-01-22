@@ -49,10 +49,26 @@
    ],
    "skills":[
       {
-         "name":"Microsoft Office Suite", 
+         "name":"",
          "level":"",
          "keywords":[
-            
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+         ]
+      },
+      {
+         "name":"",
+         "":"",
+         "":[
+            "",
+            "",
+            "",
+            "",
+            ""
          ]
       }
    ],
@@ -71,25 +87,75 @@
    ],
    "work":[
       {
-         "company":"Hana Sushi",
-         "position":"Server",
-         "startDate":"2019-07-28",
-         "endDate":"Present"
-      ]
-   }
-],
-"awards":[
-   {
-      "title":"B+ Scholarship",
-      "date":"2020-Present",
-      "awarder":"State of Hawaii",
-      "summary":"Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-   }
-],
-"references":[
-   {
-      "name":"Available upon request",
-      "reference":""
-   }
-]
+         "company":"",
+         "position":"",
+         "website":"",
+         "startDate":"",
+         "endDate":"",
+         "summary":"",
+         "highlights":[
+            "",
+            ""
+         ]
+      },
+      {
+         "company":"",
+         "position":"",
+         "website":"",
+         "startDate":"",
+         "endDate":"",
+         "summary":"",
+         "highlights":[
+            "",
+            ""
+         ]
+      }
+   ],
+   "volunteer":[
+      {
+         "organization":"",
+         "website":"",
+         "position":"",
+         "startDate":"",
+         "endDate":"",
+         "summary":"",
+         "highlights":[
+            "",
+            ""
+         ]
+      },
+      {
+         "organization":"",
+         "website":"",
+         "position":"",
+         "startDate":"",
+         "endDate":"",
+         "summary":"",
+         "highlights":[
+            "",
+            "",
+            ""
+         ]
+      }
+   ],
+   "awards":[
+      {
+         "title":"B+ Scholarship",
+         "date":"2020-Present",
+         "awarder":"State of Hawaii",
+         "summary":"Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      },
+      {
+         "title":"",
+         "date":"",
+         "awarder":"",
+         "summary":""
+      }
+   ],
+   "references":[
+      {
+         "name":"Available upon request",
+         "reference":""
+      }
+   ]
 }
