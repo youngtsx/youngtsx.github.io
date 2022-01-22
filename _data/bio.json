@@ -47,31 +47,6 @@
          ]
       }
    ],
-   "skills":[
-      {
-         "name":"",
-         "level":"",
-         "keywords":[
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-         ]
-      },
-      {
-         "name":"",
-         "":"",
-         "":[
-            "",
-            "",
-            "",
-            "",
-            ""
-         ]
-      }
-   ],
    "education":[
       {
          "institution":"University of Hawaii, Honolulu, HI",
@@ -97,47 +72,8 @@
             "Answering phone calls and assisting guests",
             "multitasking between numerous tasks to create an enjoyable experience"
          ]
-      },
-      {
-         "company":"",
-         "position":"",
-         "website":"",
-         "startDate":"",
-         "endDate":"",
-         "summary":"",
-         "highlights":[
-            "",
-            ""
-         ]
       }
-   ],
-   "volunteer":[
-      {
-         "organization":"",
-         "website":"",
-         "position":"",
-         "startDate":"",
-         "endDate":"",
-         "summary":"",
-         "highlights":[
-            "",
-            ""
-         ]
-      },
-      {
-         "organization":"",
-         "website":"",
-         "position":"",
-         "startDate":"",
-         "endDate":"",
-         "summary":"",
-         "highlights":[
-            "",
-            "",
-            ""
-         ]
-      }
-   ],
+ ],
    "awards":[
       {
          "title":"B+ Scholarship",
