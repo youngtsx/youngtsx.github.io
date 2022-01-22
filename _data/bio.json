@@ -49,16 +49,9 @@
    ],
    "skills":[
       {
-         "name":"Microsoft Office Suite",
+         "name":"Microsoft Office Suite", 
          "level":"",
          "keywords":[
-            
-         ]
-      },
-      {
-         "name":"",
-         "":"",
-         "":[
             
          ]
       }
@@ -82,17 +75,6 @@
          "position":"Server",
          "startDate":"2019-07-28",
          "endDate":"Present"
-      ]
-   },
-   {
-      "company":"",
-      "position":"",
-      "website":"",
-      "startDate":"",
-      "endDate":"",
-      "summary":"",
-      "highlights":[
-         
       ]
    }
 ],
