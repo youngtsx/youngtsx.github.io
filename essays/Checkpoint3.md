@@ -34,4 +34,4 @@ No partners.
 
 7. How are you approaching Assignment 3 differently than Assignment 2?
 
-Assignment 3 is bringing everything together and there is a lot less code to write to do so. 
+Assignment 3 is bringing everything together and there is a lot less code to write to do so. I've been taking it slow compared to assignment 2 where I was trying to do everything at once.
