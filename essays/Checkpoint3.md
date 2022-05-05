@@ -10,7 +10,7 @@ labels:
   - BLOG
 ---
 1. Show what each page will look like. The pages do not have to be “functional” but the design should clear. 
-
+![asst3](https://user-images.githubusercontent.com/97568424/166875420-6b6669fa-48dd-4658-8b3c-1b94850a02e8.jpg)
 
 2. Describe your design for your site’s shopping cart. That is, will it be a separate page that the user can view and edit, or will it be integrated into the product pages? If so, describe in detail how this will work on your site. Provide several examples of using the cart.
 It will be a separate page for the cart that the items get sent to. Each product page only has one add to cart button so it can be added in bulk. I also made it overwrite instead of adding the numbers together if there is already added items.
