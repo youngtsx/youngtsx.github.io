@@ -9,6 +9,8 @@ labels:
   - Javascript
   - BLOG
 ---
+[Screencast](https://youtu.be/_GVkJrRo0iY)
+
 1. Show what each page will look like. The pages do not have to be “functional” but the design should clear. 
 ![asst3](https://user-images.githubusercontent.com/97568424/166875420-6b6669fa-48dd-4658-8b3c-1b94850a02e8.jpg)
 
