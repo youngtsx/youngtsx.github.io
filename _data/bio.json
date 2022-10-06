@@ -29,19 +29,19 @@
    },
    "interests":[
       {
-         "name":"piano",
+         "name":"Piano",
          "keywords":[
             
          ]
       },
       {
-         "name":"tennis",
+         "name":"Tennis",
          "keywords":[
             
          ]
       },
       {
-         "name":"watching anime",
+         "name":"Watching anime",
          "keywords":[
             
          ]
@@ -74,6 +74,20 @@
             "Provide excellent customer service while in a fast-paced and high stress environment.",
             "Balance many responsibilities including answering phone calls, packing orders, serving tables, and hosting while maintaining a professional disposition.",
             "Work closely with others as a team to create a unique and memorable experience."
+         ]
+      },
+      {
+         "company":"University of Hawaii",
+         "position":"IT Student Assistant",
+         "website":"",
+         "startDate":"2022",
+         "endDate":"Present",
+         "summary":"",
+         "highlights":[
+            "Assist users in the computer lab with technical issues.",
+            "Perform routine cleaning and updating to ensure the performance of the computer systems.",
+            "Maintain documentation of technical issues that arise in the lab andactions taken.",
+            "Greet visitors at reception and serve as the first point of contact and process their credentials for access to the building."
          ]
       }
    ],
