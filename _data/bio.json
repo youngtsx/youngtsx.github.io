@@ -50,13 +50,15 @@
    "education":[
       {
          "institution":"University of Hawaii, Honolulu, HI",
-         "area":"MIS (expected Spring, 2024)",
-         "studyType":"B.S.",
+         "area":"MIS (expected Fall 2023)",
+         "studyType":"BBA",
          "startDate":"2020-08-23",
          "endDate":"Present",
-         "gpa":"",
+         "gpa":"3.88",
          "courses":[
-            
+            "ITM 352 - Programming Application System",
+            "ITM 353 - Info Systems Analysis and Design",
+            "ITM 431 - Networking and Security"
          ]
       }
    ],
