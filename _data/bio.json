@@ -2,7 +2,7 @@
    "basics":{
       "name":"Tiffany Young",
       "label":"Student",
-      "picture":"https://youngtsx.github.io/images/Profile pic (1).jpg",
+      "picture":"https://youngtsx.github.io/images/profile pic.jpg",
       "email":"tyoung24@hawaii.edu",
       "phone":"",
       "website":"https://youngtsx.github.io",
@@ -69,8 +69,9 @@
          "endDate":"Present",
          "summary":"",
          "highlights":[
-            "Answering phone calls and assisting guests",
-            "multitasking between numerous tasks to create an enjoyable experience"
+            "Provide excellent customer service while in a fast-paced and high stress environment.",
+            "Balance many responsibilities including answering phone calls, packing orders, serving tables, and hosting while maintaining a professional disposition.",
+            "Work closely with others as a team to create a unique and memorable experience."
          ]
       }
  ],
@@ -82,10 +83,4 @@
          "summary":"Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
       }
    ],
-   "references":[
-      {
-         "name":"Available upon request",
-         "reference":""
-      }
-   ]
 }
