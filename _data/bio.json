@@ -77,15 +77,13 @@
          "startDate":"2020",
          "endDate":"2024",
          "awarder":"State of Hawaii",
-         "highlights":[
-            "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-         ]
+         "summary":"Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
       },
       {
          "title":"Dean's List",
          "startDate":"2020",
          "endDate":"Present",
-         "awarder":"University of Hawaii at Manoa"
+         "summary":"University of Hawaii at Manoa"
       }
    ]
 }
