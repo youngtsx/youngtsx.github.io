@@ -64,19 +64,6 @@
    ],
    "work":[
       {
-         "company":"Hana Sushi",
-         "position":"Server",
-         "website":"",
-         "startDate":"2019",
-         "endDate":"Present",
-         "summary":"",
-         "highlights":[
-            "Provide excellent customer service while in a fast-paced and high stress environment.",
-            "Balance many responsibilities including answering phone calls, packing orders, serving tables, and hosting while maintaining a professional disposition.",
-            "Work closely with others as a team to create a unique and memorable experience."
-         ]
-      },
-      {
          "company":"University of Hawaii",
          "position":"IT Student Assistant",
          "website":"",
@@ -88,6 +75,19 @@
             "Perform routine cleaning and updating to ensure the performance of the computer systems.",
             "Maintain documentation of technical issues that arise in the lab andactions taken.",
             "Greet visitors at reception and serve as the first point of contact and process their credentials for access to the building."
+         ]
+      },
+      {
+         "company":"Hana Sushi",
+         "position":"Server",
+         "website":"",
+         "startDate":"2019",
+         "endDate":"Present",
+         "summary":"",
+         "highlights":[
+            "Provide excellent customer service while in a fast-paced and high stress environment.",
+            "Balance many responsibilities including answering phone calls, packing orders, serving tables, and hosting while maintaining a professional disposition.",
+            "Work closely with others as a team to create a unique and memorable experience."
          ]
       }
    ],
