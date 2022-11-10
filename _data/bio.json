@@ -27,26 +27,6 @@
          }
       ]
    },
-   "interests":[
-      {
-         "name":"Piano",
-         "keywords":[
-            
-         ]
-      },
-      {
-         "name":"Tennis",
-         "keywords":[
-            
-         ]
-      },
-      {
-         "name":"Watching anime",
-         "keywords":[
-            
-         ]
-      }
-   ],
    "education":[
       {
          "institution":"University of Hawaii, Honolulu, HI",
