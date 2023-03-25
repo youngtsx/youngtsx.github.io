@@ -27,6 +27,11 @@
          }
       ]
    },
+     "interests": [
+    { "name": "Tennis" },
+    { "name": "piano" },
+    { "name": "anime" }
+  ],
    "education":[
       {
          "institution":"University of Hawaii, Honolulu, HI",
