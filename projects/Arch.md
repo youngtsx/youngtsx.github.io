@@ -21,6 +21,7 @@ Run pre-installation checks
 Verifying bootmode with ls will not list anything because we are in BIOS. 
 
 Timezone issues with syncing, minutes were also wrong sometimes, this fixes the permissions 
+
 > sudo chmod 0700 /var/lib/private
 
 > sudo systemctl restart systemd-timesyncd
@@ -34,14 +35,19 @@ Timezone issues with syncing, minutes were also wrong sometimes, this fixes the 
 - Remaining goes to root partition
 
 Create Ext4 file system on root partition
+
 >mkfs.ext4 /dev/sda3
 
 Initialize swap partition
+
 >mkswap /dev/sda2
 
 Mount file systems
+
 >mount /dev/sda3 /mnt
+
 enable swap volume
+
 >swapon /dev/sda2
 
 ### Install
@@ -65,10 +71,12 @@ It will give errors if /mnt is not mounted to the file system like during the pr
 Ensure /mnt is mounted and umount when rebooting or powering off.
 
 Localization
+
 >echo LANG=en_US.UTF-8 > /etc/locale.conf
 Put the language into that file/create the file. 
 
 Host
+
 >echo *hostname* > /etc/hostname
 
 Root password
@@ -76,7 +84,9 @@ Root password
 
 ### Reboot 
 >exit
+
 >umount -a
+
 >reboot
 
 It will reboot into the gnu grub. During my first installation, when I rebooted it went right back to the screen I first saw when I started. The boot into arch installation so I thought my work was for nothing. I ended up starting over. But it was because I didn't install any bootloader. 
@@ -108,19 +118,22 @@ create group for sudo
 
 >EDITOR=vim visudo 
 
-uncomment sudo 
+uncomment sudo to give users in sudo group permission 
 
 sudo usermod -aG sudo sal/tiffany
 
 ### Install packages
->pacman -S openssh || ssh
+>pacman -S openssh
 
->pacman -Syu firefox || browser, -Syu is needed when there are url request errors.
+ssh
 
->pacman -S zsh || zsh shell
+>pacman -Syu firefox 
 
->pacman -S net-tools || to see ip info
+browser, -Syu is needed when there are url request errors.
 
+>pacman -S zsh  
+
+zsh shell
 
 If public key is not found when using pacman
 1. Install public keys
@@ -161,13 +174,14 @@ append aliases to the end of the file
 
 >makepkg -si 
 
->>sudo pacman -U packagename.tar.zst
+>sudo pacman -U packagename.tar.zst
 
 ### SSH
 host key verification failed ,need to type yes to prompt with digital ocean open ~_~
 
->>ssh root@137.184.118.57
+>ssh root@137.184.118.57
 
 need to use sudo for editing files bc they are read only
 
 make sure server has clients key
+
