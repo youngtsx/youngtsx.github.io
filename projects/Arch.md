@@ -24,7 +24,7 @@ Timezone issues with syncing, minutes were also wrong sometimes, this fixes the 
 
 ###### > sudo chmod 0700 /var/lib/private
 
-###### ###### > sudo systemctl restart systemd-timesyncd
+###### > sudo systemctl restart systemd-timesyncd
 
 ###### > sudo timedatectl status
 
