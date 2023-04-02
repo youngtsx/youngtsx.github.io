@@ -22,36 +22,36 @@ Verifying bootmode with ls will not list anything because we are in BIOS.
 
 Timezone issues with syncing, minutes were also wrong sometimes, this fixes the permissions 
 
-###### > sudo chmod 0700 /var/lib/private
+##### > sudo chmod 0700 /var/lib/private
 
-###### > sudo systemctl restart systemd-timesyncd
+##### > sudo systemctl restart systemd-timesyncd
 
-###### > sudo timedatectl status
+##### > sudo timedatectl status
 
 ### Partition and format the disk
-###### >cfdisk /dev/sda
+##### >cfdisk /dev/sda
 - 1M to BIOS
 - 4 GB to swap partition
 - Remaining goes to root partition
 
 Create Ext4 file system on root partition
 
-###### >mkfs.ext4 /dev/sda3
+##### >mkfs.ext4 /dev/sda3
 
 Initialize swap partition
 
-###### >mkswap /dev/sda2
+##### >mkswap /dev/sda2
 
 Mount file systems
 
-###### >mount /dev/sda3 /mnt
+##### >mount /dev/sda3 /mnt
 
 enable swap volume
 
-###### >swapon /dev/sda2
+##### >swapon /dev/sda2
 
 ### Install
-###### >pacstrap -K /mnt base linux linux-firmware grub 
+##### >pacstrap -K /mnt base linux linux-firmware grub 
 
 pacstrap is only used during the install phase. 
 
@@ -60,9 +60,9 @@ It is crucial for the previous steps including mounting the filesystems to /mnt 
 The first three packages are the essentials, kernel, and firmware. Grub is the bootloader.
 
 ### Configure
->genfstab -UI /mnt >> /mnt/etc/fstab
+##### >genfstab -UI /mnt >> /mnt/etc/fstab
 
->arch-chroot /mnt
+##### >arch-chroot /mnt
 
 It will give errors if /mnt is not mounted to the file system like during the previous steps.
 
@@ -72,22 +72,22 @@ Ensure /mnt is mounted and umount when rebooting or powering off.
 
 Localization
 
->echo LANG=en_US.UTF-8 > /etc/locale.conf
+##### >echo LANG=en_US.UTF-8 > /etc/locale.conf
 Put the language into that file/create the file. 
 
 Host
 
->echo *hostname* > /etc/hostname
+##### >echo *hostname* > /etc/hostname
 
 Root password
->passwd
+##### >passwd
 
 ### Reboot 
->exit
+##### >exit
 
->umount -a
+##### >umount -a
 
->reboot
+##### >reboot
 
 It will reboot into the gnu grub. During my first installation, when I rebooted it went right back to the screen I first saw when I started. The boot into arch installation so I thought my work was for nothing. I ended up starting over. But it was because I didn't install any bootloader. 
 
@@ -98,40 +98,40 @@ We are no longer using pacstrap, pacman is the proper package manager now.
 ### Install a desktop environment
 <sub>-S is for sync</sub>
 
->pacman -S lxde lxdm
+##### >pacman -S lxde lxdm
 
->systemctl enable lxdm
+##### >systemctl enable lxdm
 
 This will enable lxde to boot
 
 ### Add user accounts with sudo permissions
 
->useradd tiffany/sal
+##### >useradd tiffany/sal
 
->passwd ***
+##### >passwd ***
 
->passwd -e sal | to force him to change his password
+##### >passwd -e sal | to force him to change his password
 
->pacman -S sudo
+##### >pacman -S sudo
 
 create group for sudo 
 
->EDITOR=vim visudo 
+##### >EDITOR=vim visudo 
 
 uncomment sudo to give users in sudo group permission 
 
 sudo usermod -aG sudo sal/tiffany
 
 ### Install packages
->pacman -S openssh
+##### >pacman -S openssh
 
 ssh
 
->pacman -Syu firefox 
+##### >pacman -Syu firefox 
 
 browser, -Syu is needed when there are url request errors.
 
->pacman -S zsh  
+##### >pacman -S zsh  
 
 zsh shell
 
@@ -144,7 +144,7 @@ If public key is not found when using pacman
 
 ### Color coding terminal
 
->ls --color=auto
+##### >ls --color=auto
 
 edit /.bashrc file to color code
 
@@ -154,32 +154,34 @@ made permanent by appending alias the /etc/bash.bashrc file. Close and reopen te
 
 error couldn't write to file when using vim ~./bashrc so instead:
 
->sudo nano /etc/bash.bashrc
+##### >sudo nano /etc/bash.bashrc
 
 append aliases to the end of the file
 
->alias c='clear'
+##### >alias c='clear'
 
->alias ping='ping -c 3'
+##### >alias ping='ping -c 3'
 
->alias ls='ls -l -h'
+##### >alias ls='ls -l -h'
 
 ### install a package from AUR
 
->install base-devel | aur packages assume the system has this installed
+##### >install base-devel 
 
->git clone [url]
+aur packages assume the system has this installed
 
->cd packagename
+##### >git clone [url]
 
->makepkg -si 
+##### >cd packagename
 
->sudo pacman -U packagename.tar.zst
+##### >makepkg -si 
+
+##### >sudo pacman -U packagename.tar.zst
 
 ### SSH
 host key verification failed ,need to type yes to prompt with digital ocean open ~_~
 
->ssh root@137.184.118.57
+##### >ssh root@137.184.118.57
 
 need to use sudo for editing files bc they are read only
 
