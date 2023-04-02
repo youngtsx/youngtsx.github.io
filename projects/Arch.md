@@ -6,6 +6,7 @@ date: 2023-03-31
 labels:
   - ITM 684
   - Linux
+summary: [Walkthrough](https://youtu.be/h8iPbtUfVOk)
 ---
 
 [Walkthrough](https://youtu.be/h8iPbtUfVOk)
