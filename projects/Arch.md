@@ -1,6 +1,6 @@
 ---
-layout: essay
-type: essay
+layout: project
+type: project
 title: Arch Linux Walkthrough
 date: 2023-03-31
 labels:
