@@ -1,3 +1,13 @@
+---
+layout: essay
+type: essay
+title: Arch Linux Walkthrough
+date: 2023-03-31
+labels:
+  - ITM 684
+  - Linux
+---
+
 # Arch Linux Installation Documentation 
 
 
