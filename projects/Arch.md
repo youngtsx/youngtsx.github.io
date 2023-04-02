@@ -8,11 +8,7 @@ labels:
   - Linux
 ---
 
-# Arch Linux Installation Documentation 
-
-
 [Walkthrough](https://youtu.be/h8iPbtUfVOk)
-
 
 ## Arch Installation
 Download .iso file 
