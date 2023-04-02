@@ -113,13 +113,13 @@ uncomment sudo
 sudo usermod -aG sudo sal/tiffany
 
 ### Install packages
->pacman -S openssh | ssh
+>pacman -S openssh || ssh
 
->pacman -Syu firefox | browser, -Syu is needed when there are url request errors.
+>pacman -Syu firefox || browser, -Syu is needed when there are url request errors.
 
->pacman -S zsh | zsh shell
+>pacman -S zsh || zsh shell
 
->pacman -S net-tools | to see ip info
+>pacman -S net-tools || to see ip info
 
 
 If public key is not found when using pacman
@@ -161,12 +161,12 @@ append aliases to the end of the file
 
 >makepkg -si 
 
->sudo pacman -U packagename.tar.zst
+>>sudo pacman -U packagename.tar.zst
 
 ### SSH
 host key verification failed ,need to type yes to prompt with digital ocean open ~_~
 
->ssh root@137.184.118.57
+>>ssh root@137.184.118.57
 
 need to use sudo for editing files bc they are read only
 
