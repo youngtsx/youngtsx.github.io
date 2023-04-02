@@ -22,36 +22,36 @@ Verifying bootmode with ls will not list anything because we are in BIOS.
 
 Timezone issues with syncing, minutes were also wrong sometimes, this fixes the permissions 
 
-> sudo chmod 0700 /var/lib/private
+###### > sudo chmod 0700 /var/lib/private
 
-> sudo systemctl restart systemd-timesyncd
+###### ###### > sudo systemctl restart systemd-timesyncd
 
-> sudo timedatectl status
+###### > sudo timedatectl status
 
 ### Partition and format the disk
->cfdisk /dev/sda
+###### >cfdisk /dev/sda
 - 1M to BIOS
 - 4 GB to swap partition
 - Remaining goes to root partition
 
 Create Ext4 file system on root partition
 
->mkfs.ext4 /dev/sda3
+###### >mkfs.ext4 /dev/sda3
 
 Initialize swap partition
 
->mkswap /dev/sda2
+###### >mkswap /dev/sda2
 
 Mount file systems
 
->mount /dev/sda3 /mnt
+###### >mount /dev/sda3 /mnt
 
 enable swap volume
 
->swapon /dev/sda2
+###### >swapon /dev/sda2
 
 ### Install
->pacstrap -K /mnt base linux linux-firmware grub 
+###### >pacstrap -K /mnt base linux linux-firmware grub 
 
 pacstrap is only used during the install phase. 
 
