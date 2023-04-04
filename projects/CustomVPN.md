@@ -16,9 +16,17 @@ labels:
 We first need a sudo non root user
 - sudo adduser tiffany
 - sudo usermod -aG sudo tiffany
-
+#### Installing OpenVPN and Easy RSA
 - sudo apt update
 - sudo apt install openvpn easy-rsa
+- mkdir ~/easy-rsa
+    - make an easy-rsa directory
+- ln -s /usr/share/easy-rsa/* ~/easy-rsa/
+    - create a symlink from the easyrsa script that was installed to the directory
+-sudo chown sammy ~/easy-rsa
+-chmod 700 ~/easy-rsa
+    - ensure the directory’s owner is your non-root sudo user and restrict access to that user
+#### 
 
 
 
@@ -39,3 +47,9 @@ sudo apt install openssh-server openssh-client
     - 
 
 - ssh -p 41235 tiffany@147.182.232.139
+
+
+
+
+
+
