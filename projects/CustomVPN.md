@@ -39,11 +39,11 @@ Step 4
 - cd ~/easy-rsa
 - nano vars
 > ~/easy-rsa/vars
-set_var EASYRSA_REQ_COUNTRY    "US"
-set_var EASYRSA_REQ_PROVINCE   "NewYork"
-set_var EASYRSA_REQ_CITY       "New York City"
-set_var EASYRSA_REQ_ORG        "DigitalOcean"
-set_var EASYRSA_REQ_EMAIL      "admin@example.com"
+> set_var EASYRSA_REQ_COUNTRY    "US"
+> set_var EASYRSA_REQ_PROVINCE   "NewYork"
+> set_var EASYRSA_REQ_CITY       "New York City"
+> set_var EASYRSA_REQ_ORG        "DigitalOcean"
+> set_var EASYRSA_REQ_EMAIL      "admin@example.com"
 set_var EASYRSA_REQ_OU         "Community"
 set_var EASYRSA_ALGO           "ec"
 set_var EASYRSA_DIGEST         "sha512"
