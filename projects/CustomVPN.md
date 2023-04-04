@@ -9,13 +9,22 @@ labels:
 ---
 ## Prerequisites 
 - One Ubuntu server with a sudo non-root user and a firewall enabled. [Inital Server Set Up](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
+
+Generate a droplet
+- ubuntu 22.04 LTS x64; SFO3; 0.004/month
+- adduser tiffany
+- sudo usermod -aG sudo tiffany
+
 - A second server to act as the CA. Follow the same [Inital Server Set Up](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) and [steps 1-3](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-ubuntu-20-04)
     - CA should only be on during use of authenticating, making, or revoking client certificates. It should be off when not in use to prevent it from being compromised. 
 
-## Configuring the VPN server
-We first need a sudo non root user
-- sudo adduser tiffany
+Generate another droplet for CA 
+- ubuntu 22.04 LTS x64; SFO3; 0.004/month
+- adduser tiffany
 - sudo usermod -aG sudo tiffany
+
+- sudo apt update
+- sudo apt install easy-rsa 
 
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
@@ -35,7 +44,7 @@ We first need a sudo non root user
     - in the file, paste:
     > set_var EASYRSA_ALGO "ec"
     > set_var EASYRSA_DIGEST "sha512"
-
+    - this server is not the CA so these two lines is all.
 
 
 
