@@ -12,12 +12,12 @@ labels:
 - A second server to act as the CA. Follow the same [Inital Server Set Up](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) and [steps 1-3](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-a-certificate-authority-ca-on-ubuntu-20-04)
     - CA should only be on during use of authenticating, making, or revoking client certificates. It should be off when not in use to prevent it from being compromised. 
 
-### Configuring the VPN server
+## Configuring the VPN server
 We first need a sudo non root user
 - sudo adduser tiffany
 - sudo usermod -aG sudo tiffany
 
-#### Installing OpenVPN and Easy RSA
+### Installing OpenVPN and Easy RSA
 
 - sudo apt update
 - sudo apt install openvpn easy-rsa
@@ -29,7 +29,7 @@ We first need a sudo non root user
 -chmod 700 ~/easy-rsa
     - ensure the directory’s owner is your non-root sudo user and restrict access to that user
 
-#### Creating a PKI 
+### Creating a PKI 
 
 - cd ~/easy-rsa
 - nano vars
