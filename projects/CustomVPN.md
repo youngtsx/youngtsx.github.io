@@ -26,9 +26,12 @@ We first need a sudo non root user
 -sudo chown sammy ~/easy-rsa
 -chmod 700 ~/easy-rsa
     - ensure the directory’s owner is your non-root sudo user and restrict access to that user
-#### 
-
-
+#### Creating a PKI 
+- cd ~/easy-rsa
+- nano vars
+    - in the file, paste:
+    > set_var EASYRSA_ALGO "ec"
+    > set_var EASYRSA_DIGEST "sha512"
 
 
 
