@@ -38,7 +38,7 @@ Step 3 - PKI directory
 - cd ~/easy-rsa
 - ./easyrsa init-pki
     - initialize PKI inside the directory
-    
+
 Step 4
 - cd ~/easy-rsa
 - nano vars
@@ -63,6 +63,14 @@ Step 4
 
 - ./easyrsa build-ca
     - enter password
+
+Step 5
+- cat ~/easy-rsa/pki/ca.crt
+    - copy the output
+- nano /tmp/ca.crt
+    - paste 
+- sudo cp /tmp/ca.crt /usr/local/share/ca-certificates/
+- sudo update-ca-certificates
 
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
