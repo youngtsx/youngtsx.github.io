@@ -38,6 +38,7 @@ Step 3 - PKI directory
 Step 4
 - cd ~/easy-rsa
 - nano vars
+
 > ~/easy-rsa/vars
 > set_var EASYRSA_REQ_COUNTRY    "US"
 > set_var EASYRSA_REQ_PROVINCE   "NewYork"
@@ -47,6 +48,7 @@ Step 4
 > set_var EASYRSA_REQ_OU         "Community"
 > set_var EASYRSA_ALGO           "ec"
 > set_var EASYRSA_DIGEST         "sha512"
+
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
 - sudo apt install openvpn easy-rsa
