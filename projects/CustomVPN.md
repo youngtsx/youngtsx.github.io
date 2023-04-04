@@ -38,4 +38,4 @@ sudo apt install openssh-server openssh-client
     - cat /etc/ssh/id_rsa.pub
     - 
 
-ssh -p 41235 tiffany@147.182.232.139
+- ssh -p 41235 tiffany@147.182.232.139
