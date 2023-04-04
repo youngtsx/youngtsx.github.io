@@ -44,9 +44,9 @@ Step 4
 > set_var EASYRSA_REQ_CITY       "New York City"
 > set_var EASYRSA_REQ_ORG        "DigitalOcean"
 > set_var EASYRSA_REQ_EMAIL      "admin@example.com"
-set_var EASYRSA_REQ_OU         "Community"
-set_var EASYRSA_ALGO           "ec"
-set_var EASYRSA_DIGEST         "sha512"
+> set_var EASYRSA_REQ_OU         "Community"
+> set_var EASYRSA_ALGO           "ec"
+> set_var EASYRSA_DIGEST         "sha512"
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
 - sudo apt install openvpn easy-rsa
