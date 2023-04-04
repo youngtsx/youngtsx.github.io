@@ -40,9 +40,7 @@ Step 4
 - nano vars
 
 > ~/easy-rsa/vars
-
 > set_var EASYRSA_REQ_COUNTRY    "US"
-
 > set_var EASYRSA_REQ_PROVINCE   "Hawaii"
 
 > set_var EASYRSA_REQ_CITY       "Honolulu"
