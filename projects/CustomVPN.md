@@ -18,7 +18,6 @@ We first need a sudo non root user
 - sudo usermod -aG sudo tiffany
 
 ### Installing OpenVPN and Easy RSA
-
 - sudo apt update
 - sudo apt install openvpn easy-rsa
 - mkdir ~/easy-rsa
