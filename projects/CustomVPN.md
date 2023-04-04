@@ -41,12 +41,19 @@ Step 4
 
 > ~/easy-rsa/vars
 > set_var EASYRSA_REQ_COUNTRY    "US"
+
 > set_var EASYRSA_REQ_PROVINCE   "Hawaii"
+
 > set_var EASYRSA_REQ_CITY       "Honolulu"
+
 > set_var EASYRSA_REQ_ORG        "DigitalOcean"
+
 > set_var EASYRSA_REQ_EMAIL      "tyoung24@hawaii.edu"
+
 > set_var EASYRSA_REQ_OU         "Community"
+
 > set_var EASYRSA_ALGO           "ec"
+
 > set_var EASYRSA_DIGEST         "sha512"
 
 ### Installing OpenVPN and Easy RSA
