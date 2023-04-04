@@ -19,13 +19,34 @@ Generate a droplet
     - CA should only be on during use of authenticating, making, or revoking client certificates. It should be off when not in use to prevent it from being compromised. 
 
 Generate another droplet for CA 
+Step 1
 - ubuntu 22.04 LTS x64; SFO3; 0.004/month
 - adduser tiffany
 - sudo usermod -aG sudo tiffany
-
+Step 2
 - sudo apt update
 - sudo apt install easy-rsa 
-
+Step 3 - PKI directory
+- mkdir ~/easy-rsa
+- ln -s /usr/share/easy-rsa/* ~/easy-rsa/
+    - symlinks 
+- chmod 700 /home/sammy/easy-rsa
+    - change permissions only for owner
+- cd ~/easy-rsa
+- ./easyrsa init-pki
+    - initialize PKI inside the directory
+Step 4
+- cd ~/easy-rsa
+- nano vars
+> ~/easy-rsa/vars
+set_var EASYRSA_REQ_COUNTRY    "US"
+set_var EASYRSA_REQ_PROVINCE   "NewYork"
+set_var EASYRSA_REQ_CITY       "New York City"
+set_var EASYRSA_REQ_ORG        "DigitalOcean"
+set_var EASYRSA_REQ_EMAIL      "admin@example.com"
+set_var EASYRSA_REQ_OU         "Community"
+set_var EASYRSA_ALGO           "ec"
+set_var EASYRSA_DIGEST         "sha512"
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
 - sudo apt install openvpn easy-rsa
