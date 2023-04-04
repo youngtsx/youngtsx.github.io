@@ -73,6 +73,7 @@ Step 4
 - nano vars
     - in the file, paste:
     > set_var EASYRSA_ALGO "ec"
+    
     > set_var EASYRSA_DIGEST "sha512"
     - this server is not the CA so these two lines is all.
 
