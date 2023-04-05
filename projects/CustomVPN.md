@@ -175,7 +175,21 @@ On CA server
     - copy the client certificate back to VPN server
 
 On VPN Server
-- 
+- cp /tmp/client1.crt ~/client-configs/keys/
+    - copy the certificate to the client-configs/keys/ directory
+- cp ~/easy-rsa/ta.key ~/client-configs/keys/
+- sudo cp /etc/openvpn/server/ca.crt ~/client-configs/keys/
+- sudo chown tiffany.tiffany ~/client-configs/keys/*
+
+### Configure OpenVPN
+- sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/server/
+- sudo gunzip /etc/openvpn/server/server.conf.gz
+- sudo nano /etc/openvpn/server/server.conf
+
+`;`tls-auth ta.key 0 # This file is secret
+
+`tls-crypt ta.key`
+
 
 
 
