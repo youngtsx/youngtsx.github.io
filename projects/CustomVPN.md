@@ -148,7 +148,7 @@ On CA server
 
 On VPN server
 - sudo cp /tmp/{server.crt,ca.crt} /etc/openvpn/server
-    copy the files from /tmp
+    - copy the files from /tmp
 
 ### Configuring OpenVPN cryptographic material
 - cd ~/easy-rsa
