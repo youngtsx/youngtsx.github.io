@@ -186,9 +186,9 @@ On VPN Server
 - sudo gunzip /etc/openvpn/server/server.conf.gz
 - sudo nano /etc/openvpn/server/server.conf
 
-`;`tls-auth ta.key 0 # This file is secret
+[`;`]tls-auth ta.key 0 # This file is secret
 
-`tls-crypt ta.key`
+[`tls-crypt ta.key`]
 
 
 
