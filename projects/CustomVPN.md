@@ -197,5 +197,14 @@ uncomment
 - user nobody
 - group nogroup
 
+change port 1194 to 443
+
+uncomment proto tcp
+
+### Adjusting networking configuration
+- sudo nano /etc/sysctl.conf
+- net.ipv4.ip_forward = 1
+
+
 
 
