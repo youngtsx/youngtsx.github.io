@@ -11,7 +11,7 @@ labels:
 - One Ubuntu server with a sudo non-root user and a firewall enabled. [Initial Server Set Up](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04)
 
 Generate a droplet
-- ubuntu 22.04 LTS x64; SFO3; 0.004/month
+- ubuntu 22.04 LTS x64; SFO3; 0.04/month
 - adduser tiffany
 - sudo usermod -aG sudo tiffany
 
@@ -35,7 +35,7 @@ sudo apt install openssh-server openssh-client
 Generate another droplet for CA 
 
 Step 1
-- ubuntu 22.04 LTS x64; SFO3; 0.004/month
+- ubuntu 22.04 LTS x64; SFO3; 0.04/month
 - adduser tiffany
 - sudo usermod -aG sudo tiffany
 
