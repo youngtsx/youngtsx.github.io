@@ -101,6 +101,7 @@ sudo apt install openssh-server openssh-client
     - append key created during ssh-keygen
     - cat /etc/ssh/id_rsa.pub
 
+## OpenVPN 
 ### Installing OpenVPN and Easy RSA
 - sudo apt update
 - sudo apt install openvpn easy-rsa
@@ -123,8 +124,46 @@ sudo apt install openssh-server openssh-client
     > set_var EASYRSA_DIGEST "sha512"
 
     - this server is not the CA so these two lines is all.
+- ./easyrsa init-pki
 
+### Create a certificate request and private key
+- cd ~/easy-rsa
+- ./easyrsa gen-req server nopass
+    - name the server, can leave blank
+- sudo cp /home/tiffany/easy-rsa/pki/private/server.key /etc/openvpn/server/
 
+### Signing the certificate
+- scp /home/tiffany/easy-rsa/pki/reqs/server.req tiffany@your_ca_server_ip:/tmp
+    - ensure the CA has vpn server's public key (ssh in the prereqs)
+
+On CA server
+- cd ~/easy-rsa
+- ./easyrsa import-req /tmp/server.req server
+    - this imports the server from the secure copy
+- ./easyrsa sign-req server server
+    - it will ask if this is from a trusted source, say yes and confirm
+- scp pki/issued/server.crt tiffany@your_vpn_server_ip:/tmp
+- scp pki/ca.crt tiffany@your_vpn_server_ip:/tmp
+    - make sure vpn server has the CA server's public key
+
+On VPN server
+- sudo cp /tmp/{server.crt,ca.crt} /etc/openvpn/server
+    copy the files from /tmp
+
+### Configuring OpenVPN cryptographic material
+- cd ~/easy-rsa
+- openvpn --genkey secret ta.key
+- sudo cp ta.key /etc/openvpn/server
+
+### Generate client certificate and key pair
+- mkdir -p ~/client-configs/keys
+- chmod -R 700 ~/client-configs
+- cd ~/easy-rsa
+- ./easyrsa gen-req client1 nopass
+    - create key
+- cp pki/private/client1.key ~/client-configs/keys/
+    - 
+- scp pki/reqs/client1.req sammy@your_ca_server_ip:/tmp
 
 
 
