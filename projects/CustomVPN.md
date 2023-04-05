@@ -186,13 +186,16 @@ On VPN Server
 - sudo gunzip /etc/openvpn/server/server.conf.gz
 - sudo nano /etc/openvpn/server/server.conf
 
-[`;`]tls-auth ta.key 0 # This file is secret
+change ';tls-auth ta.key 0 # This file is secret' to <b>tls-crypt ta.key</b>
 
-[`tls-crypt ta.key`]
+change ';cipher AES-256-CBC' to <b>cipher AES-256-GCM</b>
+- after this line,  add <b>auth SHA256</b>
 
+change ';dh dh2048.pem' to <b>dh none</b>
 
-
-
+uncomment 
+- user nobody
+- group nogroup
 
 
 
