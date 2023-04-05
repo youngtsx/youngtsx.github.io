@@ -47,7 +47,7 @@ Step 3 - PKI directory
 - mkdir ~/easy-rsa
 - ln -s /usr/share/easy-rsa/* ~/easy-rsa/
     - symlinks 
-- chmod 700 /home/sammy/easy-rsa
+- chmod 700 /home/tiffany/easy-rsa
     - change permissions only for owner
 - cd ~/easy-rsa
 - ./easyrsa init-pki
@@ -109,7 +109,7 @@ sudo apt install openssh-server openssh-client
     - make an easy-rsa directory
 - ln -s /usr/share/easy-rsa/* ~/easy-rsa/
     - create a symlink from the easyrsa script that was installed to the directory
--sudo chown sammy ~/easy-rsa
+-sudo chown tiffany ~/easy-rsa
 -chmod 700 ~/easy-rsa
     - ensure the directory’s owner is your non-root sudo user and restrict access to that user
 
@@ -162,9 +162,20 @@ On VPN server
 - ./easyrsa gen-req client1 nopass
     - create key
 - cp pki/private/client1.key ~/client-configs/keys/
-    - 
-- scp pki/reqs/client1.req sammy@your_ca_server_ip:/tmp
+    - copy the key
+- scp pki/reqs/client1.req tiffany@your_ca_server_ip:/tmp
+    - transfer to the CA server
 
+On CA server
+- cd ~/easy-rsa
+- ./easyrsa import-req /tmp/client1.req client1
+- ./easyrsa sign-req client client1
+    - prompted to sign
+- scp pki/issued/client1.crt tiffany@your_server_ip:/tmp
+    - copy the client certificate back to VPN server
+
+On VPN Server
+- 
 
 
 
