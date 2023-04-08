@@ -319,26 +319,25 @@ BASE_CONFIG=~/client-configs/base.conf
  
 cat ${BASE_CONFIG} \
 
-    <(echo -e '<ca>') \
+> <(echo -e '<ca>') \
 
-    ${KEY_DIR}/ca.crt \
+> ${KEY_DIR}/ca.crt \
 
-    <(echo -e '</ca>\n<cert>') \
+> <(echo -e '</ca>\n<cert>') \
 
-    ${KEY_DIR}/${1}.crt \
+> ${KEY_DIR}/${1}.crt \
 
+> <(echo -e '</cert>\n<key>') \
 
-    <(echo -e '</cert>\n<key>') \
+> ${KEY_DIR}/${1}.key \
 
-    ${KEY_DIR}/${1}.key \
+> <(echo -e '</key>\n<tls-crypt>') \
 
-    <(echo -e '</key>\n<tls-crypt>') \
+> ${KEY_DIR}/ta.key \
 
-    ${KEY_DIR}/ta.key \
+> <(echo -e '</tls-crypt>') \
 
-    <(echo -e '</tls-crypt>') \
-
-    > ${OUTPUT_DIR}/${1}.ovpn
+> ${OUTPUT_DIR}/${1}.ovpn
 
 Mark this as an executable
 - chmod 700 ~/client-configs/make_config.sh
