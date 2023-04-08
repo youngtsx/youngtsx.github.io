@@ -312,7 +312,6 @@ nano ~/client-configs/make_config.sh
  
 KEY_DIR=~/client-configs/keys
 
-
 OUTPUT_DIR=~/client-configs/files
 
 BASE_CONFIG=~/client-configs/base.conf
