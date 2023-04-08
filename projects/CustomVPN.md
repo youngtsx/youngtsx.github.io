@@ -305,7 +305,8 @@ comment out
 save and close
 
 nano ~/client-configs/make_config.sh
-<p>#!/bin/bash
+
+#!/bin/bash
  
 \# First argument: Client identifier
  
@@ -337,7 +338,7 @@ cat ${BASE_CONFIG} \
 
     <(echo -e '</tls-crypt>') \
 
-    > ${OUTPUT_DIR}/${1}.ovpn</p>
+    > ${OUTPUT_DIR}/${1}.ovpn
 
 Mark this as an executable
 - chmod 700 ~/client-configs/make_config.sh
