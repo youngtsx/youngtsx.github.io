@@ -348,4 +348,19 @@ Mark this as an executable
 - ls ~/client-configs/files
 
 On your local machine
-- sftp tiffany@openvpn_server_ip:client-configs/files/client1.ovpn ~/
+- sftp -P 41235 tiffany@openvpn_server_ip:client-configs/files/client1.ovpn ~/
+copies the client config from the server
+
+- sudo apt update
+- sudo apt install openvpn
+
+- ls /etc/openvpn/
+- nano client1.opvn
+
+uncomment:
+- script-security-2
+- up /etc/openvpn/update-resolv-conf
+- down /etc/openvpn/update-resolv-conf
+
+connect with:
+- sudo openvpn --config client1/opvn
