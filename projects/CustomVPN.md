@@ -197,6 +197,18 @@ uncomment
 - user nobody
 - group nogroup
 
+if it says group nobody, change it to nobody
+
+- push "redirect-gateway def1 bypass-dhcp"
+- push "dhcp-option DNS 208.67.222.222"
+- push "dhcp-option DNS 208.67.220.220"
+
+Adjust port 1194 to 443 and change protocol to proto tcp
+
+change explicity-exit-notify *0*
+
+This is necessary for TCP or it will cause errors.
+
 change port 1194 to 443
 
 uncomment proto tcp
@@ -205,6 +217,20 @@ uncomment proto tcp
 - sudo nano /etc/sysctl.conf
 - net.ipv4.ip_forward = 1
 
+sudo sysctl -p should output "net.ipv4.ip_forward = 1"
 
+### Firewall conf
+-ip route list default
+output: default via 159.65.160.1 dev *eth0* proto static
 
+-sudo nano /etc/ufw/before.rules
 
+paste : 
+>\# START OPENVPN RULES
+>\# NAT table rules
+>*nat
+>:POSTROUTING ACCEPT [0:0]
+>\# Allow traffic from OpenVPN client to eth0 (change to the interface you discovered!)
+>-A POSTROUTING -s 10.8.0.0/8 -o eth0 -j MASQUERADE
+>COMMIT
+>\# END OPENVPN RULES
