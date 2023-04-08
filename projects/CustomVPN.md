@@ -242,3 +242,61 @@ paste :
 >COMMIT
 
 >\# END OPENVPN RULES
+
+save and close
+
+- sudo nano /etc/default/ufw
+change drop to accept: DEFAULT_FORWARD_POLICY="ACCEPT"
+
+- sudo ufw allow 443/tcp
+- sudo ufw allow openssh
+- sufo ufw disable
+- sudo ufw enable
+
+### Starting OpenVPN
+- sudo systemctl -f enable openvpn-server@server.service
+- sudo systemctl start openvpn-server@server.service
+- sudo systemctl status openvpn-server@server.service
+
+### Creating Client Config Infrastructure
+- mkdir -p ~/client-configs/files
+- cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf ~/client-configs/base.conf
+- nano ~/client-configs/base.conf
+- proto tcp
+
+uncomment: 
+> \# Downgrade privileges after initialization (non-Windows only)
+
+> user nobody
+
+> group nogroup
+
+comment out ca, cert, key, and tls-auth ta.key 1
+
+mirror cipher and auth 
+>cipher AES-256-GCM
+
+>auth SHA256
+
+add key-direction somewhere
+
+> key-direction 1
+
+comment out 
+
+>; script-security 2
+
+>; up /etc/openvpn/update-resolv-conf
+
+>; down /etc/openvpn/update-resolv-conf
+
+
+>; script-security 2
+
+>; up /etc/openvpn/update-systemd-resolved
+
+>; down /etc/openvpn/update-systemd-resolved
+
+>; down-pre
+
+>; dhcp-option DOMAIN-ROUTE .
