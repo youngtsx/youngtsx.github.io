@@ -249,6 +249,7 @@ save and close
 change drop to accept: DEFAULT_FORWARD_POLICY="ACCEPT"
 
 - sudo ufw allow 443/tcp
+- sudo ufw allow 41235/tcp (not this, openssh is already open on 41235 and we are  enabling it)
 - sudo ufw allow openssh
 - sufo ufw disable
 - sudo ufw enable
@@ -323,3 +324,15 @@ cat ${BASE_CONFIG} \
     ${KEY_DIR}/ta.key \
     <(echo -e '</tls-crypt>') \
     > ${OUTPUT_DIR}/${1}.ovpn</p>
+
+Mark this as an executable
+- chmod 700 ~/client-configs/make_config.sh
+
+### Generating Client Configurations
+- cd ~/client-configs
+- ./make_config.sh client1
+
+- ls ~/client-configs/files
+
+On your local machine
+- sftp tiffany@openvpn_server_ip:client-configs/files/client1.ovpn ~/
