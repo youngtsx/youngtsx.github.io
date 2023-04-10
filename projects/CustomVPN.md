@@ -364,3 +364,24 @@ uncomment:
 
 connect with:
 - sudo openvpn --config client1/opvn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+on client machine
+- sftp -P 41235 tiffany@147.182.232.139:algo/configs/147.182.194.171/wireguard/laptop.conf ~/
+
+-sudo mv /home/young/laptop.conf /etc/wireguard/laptop.conf
