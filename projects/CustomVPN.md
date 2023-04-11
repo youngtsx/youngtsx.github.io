@@ -368,24 +368,21 @@ connect with:
 - sudo openvpn --config client1.ovpn
 
 ## AlgoVPN and Wireguard
+get a copy of algo
+- git clone https://github.com/trailofbits/algo.git
+install core dependencies 
+- sudo apt install -y --no-install-recommends python3-virtualenv
+other dependencies
+- python3 -m virtualenv --python="$(command -v python3)" .env &&
+  source .env/bin/activate &&
+  python3 -m pip install -U pip virtualenv &&
+  python3 -m pip install -r requirements.txt
+set config options
+- vim config.cfg 
+    - adjust ports or users
+- run ./algo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-on client machine
+on *client machine*
 - sudo apt update && sudo apt upgrade
 
 If the file /var/run/reboot-required exists then reboot:
@@ -395,6 +392,24 @@ If the file /var/run/reboot-required exists then reboot:
 
 Locate the config file
 - sftp -P 41235 tiffany@147.182.232.139:algo/configs/147.182.194.171/wireguard/laptop.conf ~/
+
+Install config file 
+- sudo install -o root -g root -m 600 <username>.conf /etc/wireguard/wg0.conf
+    - i used laptop.conf in the previous command
+
+Start wireguard
+- sudo systemctl start wg-quick@wg0
+Check if it started correctly
+- sudo systemctl status wg-quick@wg0
+Verify connection
+- sudo wg
+See if client is using IP address of algovpn
+- curl ipv4.icanhazip.com
+    - may need to install curl
+Optionally configure connection to come up at boot
+- sudo systemctl enable wg-quick@wg0
+
+
 
 
 
