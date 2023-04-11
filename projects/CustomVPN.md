@@ -373,6 +373,7 @@ get a copy of algo
 install core dependencies 
 - sudo apt install -y --no-install-recommends python3-virtualenv
 other dependencies
+- cd algo
 - python3 -m virtualenv --python="$(command -v python3)" .env &&
   source .env/bin/activate &&
   python3 -m pip install -U pip virtualenv &&
