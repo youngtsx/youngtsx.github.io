@@ -365,7 +365,7 @@ uncomment:
 - down /etc/openvpn/update-resolv-conf
 
 connect with:
-- sudo openvpn --config client1/opvn
+- sudo openvpn --config client1.ovpn
 
 ## AlgoVPN and Wireguard
 
