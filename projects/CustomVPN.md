@@ -364,3 +364,5 @@ uncomment:
 
 connect with:
 - sudo openvpn --config client1/opvn
+
+## AlgoVPN and Wireguard
