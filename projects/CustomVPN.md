@@ -352,7 +352,9 @@ On your local machine
 copies the client config from the server
 
 - sudo apt update
+    - or pacman -Syu
 - sudo apt install openvpn
+    - or sudo pacman -S openvpn
 
 - ls /etc/openvpn/
 - nano client1.opvn
@@ -366,3 +368,41 @@ connect with:
 - sudo openvpn --config client1/opvn
 
 ## AlgoVPN and Wireguard
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+on client machine
+- sudo apt update && sudo apt upgrade
+
+If the file /var/run/reboot-required exists then reboot:
+- [ -e /var/run/reboot-required ] && sudo reboot 
+
+- sudo apt install wireguard openresolv
+
+Locate the config file
+- sftp -P 41235 tiffany@147.182.232.139:algo/configs/147.182.194.171/wireguard/laptop.conf ~/
+
+
+
+
+
+
+
+
+
+
+- wg-quick up wg0
