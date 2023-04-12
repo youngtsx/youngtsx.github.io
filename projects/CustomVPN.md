@@ -248,9 +248,10 @@ save and close
 - sudo nano /etc/default/ufw
 change drop to accept: DEFAULT_FORWARD_POLICY="ACCEPT"
 
+allowing 443 and 53 means our traffic will never be blocked
 - sudo ufw allow 443/tcp
 - sudo ufw allow 53/udp
-- sudo ufw allow 41235/tcp (not this, openssh is already open on 41235 and we are enabling it)
+- sudo ufw allow 41235/tcp
 - sudo ufw allow openssh
 - sufo ufw disable
 - sudo ufw enable
