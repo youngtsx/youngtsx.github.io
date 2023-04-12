@@ -367,7 +367,7 @@ uncomment:
 connect with:
 - sudo openvpn --config client1.ovpn
 
-## AlgoVPN and Wireguard
+## AlgoVPN
 get a copy of algo
 - git clone https://github.com/trailofbits/algo.git
 install core dependencies 
@@ -397,7 +397,7 @@ Install config file
 - sudo install -o root -g root -m 600 <username>.conf /etc/wireguard/wg0.conf
     - i used laptop.conf in the previous command
 
-Start wireguard
+## Start wireguard
 - sudo systemctl start wg-quick@wg0
 Check if it started correctly
 - sudo systemctl status wg-quick@wg0
@@ -408,4 +408,11 @@ See if client is using IP address of algovpn
     - may need to install curl
 Optionally configure connection to come up at boot
 - sudo systemctl enable wg-quick@wg0
+
+## Cronjobs
+- crontab -e 
+    - open with preferred text editor
+
+
+
 
