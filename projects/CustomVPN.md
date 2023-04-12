@@ -249,6 +249,7 @@ save and close
 change drop to accept: DEFAULT_FORWARD_POLICY="ACCEPT"
 
 - sudo ufw allow 443/tcp
+- sudo ufw allow 53/udp
 - sudo ufw allow 41235/tcp (not this, openssh is already open on 41235 and we are enabling it)
 - sudo ufw allow openssh
 - sufo ufw disable
