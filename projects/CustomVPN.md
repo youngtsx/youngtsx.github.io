@@ -385,10 +385,9 @@ set config options
 
 on *client machine*
 - sudo apt update && sudo apt upgrade
-
 If the file /var/run/reboot-required exists then reboot:
 - [ -e /var/run/reboot-required ] && sudo reboot 
-
+Install wireguard
 - sudo apt install wireguard openresolv
 
 Locate the config file
@@ -410,15 +409,3 @@ See if client is using IP address of algovpn
 Optionally configure connection to come up at boot
 - sudo systemctl enable wg-quick@wg0
 
-
-
-
-
-
-
-
-
-
-
-
-- wg-quick up wg0
