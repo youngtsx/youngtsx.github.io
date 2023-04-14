@@ -259,7 +259,10 @@ allowing 443 and 53 means our traffic will never be blocked
 ### Starting OpenVPN
 - sudo systemctl -f enable openvpn-server@server.service
 - sudo systemctl start openvpn-server@server.service
+
+Check if it started
 - sudo systemctl status openvpn-server@server.service
+
 
 ### Creating Client Config Infrastructure
 - mkdir -p ~/client-configs/files
