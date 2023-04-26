@@ -16,3 +16,11 @@ Generate a droplet
 - sudo usermod -aG sudo tiffany
 
 [install docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/)
+
+
+
+![](dockerimages/docker_compose_yml.png)
+
+- copy and paste 
+- change serverlurl to DO server ip
+- edit the peers as needed
