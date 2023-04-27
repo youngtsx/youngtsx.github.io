@@ -26,9 +26,11 @@ Generate a droplet
 - change serverlurl to DO server ip
 - edit the peers as needed
 
+starting wireguard
 - cd ~/wireguard/
 - sudo docker-compose up -d
 - sudo docker-compose logs -f wireguard
+  - this will output all the qr codes for the peers you created. 
 
 add tunnel to wireguard
 - sftp the .conf file to client machine
