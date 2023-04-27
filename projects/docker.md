@@ -41,5 +41,5 @@ add tunnel to wireguard
 - locate the file on wireguard tunnel
 
 ![test](dockerimages/Wireguard%20test%20on.png)  ![test1](dockerimages/wireguardtest1.PNG)![tesy2](dockerimages/wireguardtest2.PNG)
-
+<img src="projects\dockerimages\Wireguard test on.png"></img>
 
