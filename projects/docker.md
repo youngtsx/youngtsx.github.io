@@ -18,12 +18,17 @@ Generate a droplet
 [install docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/)
 - follow this and install docker
 
-
+- mkdir -p ~/wireguard/config/
+- nano ~/wireguard/docker-compose.yml
 ![](dockerimages/docker_compose_yml.png)
 
-- copy and paste 
+- copy and paste this into the .yml file
 - change serverlurl to DO server ip
 - edit the peers as needed
+
+
+- sudo docker-compose up -d
+- sudo docker-compose logs -f wireguard
 
 add tunnel to wireguard
 - sftp the .conf file to client machine
