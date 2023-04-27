@@ -26,7 +26,7 @@ Generate a droplet
 - change serverlurl to DO server ip
 - edit the peers as needed
 
-
+- cd ~/wireguard/
 - sudo docker-compose up -d
 - sudo docker-compose logs -f wireguard
 
