@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-title: Docker Install
+title: Docker Wireguard Install
 date: 2023-04-28
 labels:
   - ITM 684
