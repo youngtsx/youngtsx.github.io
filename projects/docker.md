@@ -16,7 +16,7 @@ Generate a droplet
 - sudo usermod -aG sudo tiffany
 
 [install docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/)
-
+- follow this and install docker
 
 
 ![](dockerimages/docker_compose_yml.png)
@@ -24,3 +24,7 @@ Generate a droplet
 - copy and paste 
 - change serverlurl to DO server ip
 - edit the peers as needed
+
+add tunnel to wireguard
+- sftp the .conf file to client machine
+- locate the file on wireguard tunnel
