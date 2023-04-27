@@ -36,9 +36,22 @@ starting wireguard
 
 ![qr](dockerimages/wireguard%20qr.png)
 
+Locate the config file
+- sftp -P 41235 tiffany@147.182.232.139:algo/configs/147.182.194.171/wireguard/laptop.conf ~/
+
+Install config file 
+- sudo install -o root -g root -m 600 <username>.conf /etc/wireguard/wg0.conf
+    - i used laptop.conf in the previous command
+
+## Wireguard on pc
+Download wireguard and setup
+- add tunnel and find the .conf file previously downloaded
+
 add tunnel to wireguard
 - sftp the .conf file to client machine
 - locate the file on wireguard tunnel
 
 <img src="dockerimages/Wireguardon.png" width="25%" height="25%"> <img src="dockerimages/wireguardtest2.PNG" width="25%" height="25%"><img src="dockerimages/wireguardtest1.PNG" width="25%" height="25%">
+
+<img src="dockerimages/laptopwireguard" width="50%" height="50%">
 
