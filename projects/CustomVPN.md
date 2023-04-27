@@ -388,7 +388,7 @@ set config options
     - adjust ports or users
 - run ./algo
 
-on *client machine*
+on *client machine* (linux)
 - sudo apt update && sudo apt upgrade
 If the file /var/run/reboot-required exists then reboot:
 - [ -e /var/run/reboot-required ] && sudo reboot 
@@ -402,7 +402,12 @@ Install config file
 - sudo install -o root -g root -m 600 <username>.conf /etc/wireguard/wg0.conf
     - i used laptop.conf in the previous command
 
-## Start wireguard
+## Wireguard on pc
+Download wireguard and setup
+- add tunnel and find the .conf file previously downloaded
+
+
+## Start wireguard on linux
 - sudo systemctl start wg-quick@wg0
 Check if it started correctly
 - sudo systemctl status wg-quick@wg0
