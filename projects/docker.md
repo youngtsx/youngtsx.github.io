@@ -31,6 +31,7 @@ starting wireguard
 - sudo docker-compose up -d
 - sudo docker-compose logs -f wireguard
   - this will output all the qr codes for the peers you created. 
+[](docker.md)
 
 add tunnel to wireguard
 - sftp the .conf file to client machine
