@@ -16,6 +16,7 @@ Generate a droplet
 - sudo usermod -aG sudo tiffany
 
 [install docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/)
+
 - follow this and install docker
 
 - mkdir -p ~/wireguard/config/
@@ -31,7 +32,8 @@ starting wireguard
 - sudo docker-compose up -d
 - sudo docker-compose logs -f wireguard
   - this will output all the qr codes for the peers you created. 
-[](docker.md)
+
+![qr](dockerimages/wireguard%20qr.png)
 
 add tunnel to wireguard
 - sftp the .conf file to client machine
