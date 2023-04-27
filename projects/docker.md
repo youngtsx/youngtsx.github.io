@@ -22,7 +22,7 @@ Generate a droplet
 
 - mkdir -p ~/wireguard/config/
 - nano ~/wireguard/docker-compose.yml
-![](dockerimages/docker_compose_yml.png)
+<img src="dockerimages/docker_compose_yml.png" width="50%" height="50%">
 
 - copy and paste this into the .yml file
 - change serverlurl to DO server ip
@@ -40,5 +40,5 @@ add tunnel to wireguard
 - sftp the .conf file to client machine
 - locate the file on wireguard tunnel
 
-<img src="dockerimages/Wireguardon.png" width="10%" height="10%">
+<img src="dockerimages/Wireguardon.png" width="25%" height="25%">
 
