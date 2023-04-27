@@ -18,6 +18,7 @@ Generate a droplet
 [install docker](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/)
 
 - follow this and install docker
+- sudo apt install docker-compose
 
 - mkdir -p ~/wireguard/config/
 - nano ~/wireguard/docker-compose.yml
@@ -38,3 +39,7 @@ starting wireguard
 add tunnel to wireguard
 - sftp the .conf file to client machine
 - locate the file on wireguard tunnel
+
+![test](dockerimages/Wireguard%20test%20on.png)  ![test1](dockerimages/wireguardtest1.PNG)![tesy2](dockerimages/wireguardtest2.PNG)
+
+
