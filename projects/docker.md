@@ -51,5 +51,5 @@ add tunnel to wireguard
 - sftp the .conf file to client machine
 - locate the file on wireguard tunnel
 
-<img src="dockerimages/laptopwireguard.png" " style="float: center">
+<img src="dockerimages/laptopwireguard.png" style="float: center">
 
