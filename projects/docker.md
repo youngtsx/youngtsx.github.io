@@ -53,5 +53,5 @@ add tunnel to wireguard
 
 <img src="dockerimages/Wireguardon.png" width="50%" height="50%" style="float: right"> <img src="dockerimages/wireguardtest2.PNG" width="50%" height="50%" style="float: center"><img src="dockerimages/wireguardtest1.PNG" width="50%" height="50%" style="float: left">
 
-<img src="dockerimages/laptopwireguard.png" width="90%" height="90%" style="float: center">
+<img src="dockerimages/laptopwireguard.png" width="99%" height="99%" style="float: center">
 
