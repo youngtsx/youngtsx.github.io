@@ -25,7 +25,7 @@ Generate a droplet
 <img src="dockerimages/docker_compose_yml.png" width="50%" height="50%">
 
 - copy and paste this into the .yml file
-- change serverlurl to DO server ip
+- change serverlurl to your DO server ip
 - edit the peers as needed
 
 starting wireguard
