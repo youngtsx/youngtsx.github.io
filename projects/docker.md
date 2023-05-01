@@ -8,7 +8,7 @@ labels:
   - Linux
   - VPN
 ---
-### Create a digital ocean server with a non-root user with sudo permissions
+Create a digital ocean server with a non-root user with sudo permissions
 
 Generate a droplet
 - ubuntu 22.04 LTS x64; SFO3; 0.04/month
