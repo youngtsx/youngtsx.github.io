@@ -42,11 +42,11 @@ starting wireguard
 ![qr](dockerimages/wireguard%20qr.png)
 
 Locate the config file
-- sftp -P 41235 tiffany@147.182.232.139:algo/configs/147.182.194.171/wireguard/laptop.conf ~/
+- sftp -P 41235 tiffany@161.35.114.202:wireguard/config/peer_tiffanypc1/peer_tiffanypc1.conf ~/
 
 Install config file 
 - sudo install -o root -g root -m 600 <username>.conf [file location]
-    - i used laptop.conf in the previous command
+    - i used peer_tiffanypc1.conf in the previous command
 
 ## Wireguard on pc
 Download wireguard and setup
